@@ -6,13 +6,6 @@ public class DiscreteKnapsackProblem
 		int numberOfItems = items.length;
 		int [][]A = new int[numberOfItems + 1][maxWeight + 1];
 
-		for(int i = 0; i < numberOfItems + 1; i++) {
-			A[i][0] = 0;
-		}
-		for(int i = 0; i < maxWeight + 1; i++) {
-			A[0][i] = 0;
-		}
-
 		for(int i = 1; i < numberOfItems + 1; i++) {
 			for(int j = 1; j < maxWeight + 1; j++) {
 				if(items[i-1].getWeight() > j) {

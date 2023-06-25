@@ -1,5 +1,5 @@
-import dynamicprogramming.DiscreteKnapsackProblem;
-import dynamicprogramming.Item;
+import discreteknapsackproblem.DiscreteKnapsackProblem;
+import discreteknapsackproblem.Item;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

@@ -1,4 +1,4 @@
-package dynamicprogramming;
+package discreteknapsackproblem;
 
 public class Item {
 	private int value;

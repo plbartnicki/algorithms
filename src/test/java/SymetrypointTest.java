@@ -1,11 +1,17 @@
 import org.junit.Test;
+import symetrypoint.Main;
 
 import static org.junit.Assert.assertEquals;
 
-public class ArrayInversioncountTest
+public class SymetrypointTest
 {
 	@Test
 	public void test() {
-		assertEquals(, main.solution( 5, new int[]{1,3,1,4,2,3,5,4} ));
+		Main main = new Main();
+		assertEquals(3, main.solution( "racecar") );
+		assertEquals(-1, main.solution( "ab") );
+		assertEquals(-1, main.solution( "") );
+		assertEquals(0, main.solution( "a") );
+		assertEquals(-1, main.solution( "bb") );
 	}
 }

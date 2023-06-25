@@ -1,2 +1,9 @@
-package PACKAGE_NAME;public class CountDivTest {
+import org.junit.Test;
+
+public class CountDivTest
+{
+	@Test
+	public void test() {
+
+	}
 }

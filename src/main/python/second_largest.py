@@ -1,3 +1,23 @@
+def znajdz_druga_najwieksza(lista):
+    if len(lista) < 2:
+        return "Lista musi zawierać przynajmniej dwie liczby"
+
+    najwieksza = float('-inf')  # Ustawiamy początkową wartość na minus nieskończoność
+    druga_najwieksza = float('-inf')
+
+    for liczba in lista:
+        if liczba > najwieksza:
+            druga_najwieksza = najwieksza
+            najwieksza = liczba
+        elif liczba > druga_najwieksza and liczba != najwieksza:
+            druga_najwieksza = liczba
+
+    if druga_najwieksza == float('-inf'):
+        return "Nie znaleziono drugiej największej liczby"
+    else:
+        return druga_najwieksza
+
+
 # 2 3 1
 # r = 2
 # b = 3
